@@ -1,8 +1,8 @@
 {
-  "name": "to-do-api",
-  "version": "0.0.0",
+  "name": "typescript-api-server",
+  "version": "1.0.0",
   "description": "TypeScript API Server",
-  "author": "",
+  "author": "Oliver Cooke",
   "license": "ISC",
   "scripts": {
     "start": "node dist/server.js",

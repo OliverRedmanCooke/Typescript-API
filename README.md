@@ -16,11 +16,13 @@ First install the node_modules
 npm i
 ```
 
-To run locally run this command, it will spin up a MongoDB database
+Then use docker-compose to spin up a MongoDB database
 
 ```shell
 docker-compose up
 ```
+
+Then you will need to setup your `.env` file, there is a `.env-example` in the repo that you can use
 
 To run the api in development mode, open another terminal and run: 
 
@@ -41,3 +43,13 @@ To run the linting and fix any issues, you can run:
 ```shell
 npm run lint:fix
 ```
+
+To run the api in production mode, open another terminal and run: 
+
+```shell
+npm run prod
+```
+
+### Todo
+
+- [ ] Add route to edit tasks
