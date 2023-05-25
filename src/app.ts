@@ -28,11 +28,11 @@ class App {
   }
 
   public async startUp(routes) {
-      this.connectToDatabase();
-      this.initializeMiddlewares();
-      this.initializeRoutes(routes);
-      this.initializeSwagger();
-      this.initializeErrorHandling();
+    this.connectToDatabase();
+    this.initializeMiddlewares();
+    this.initializeRoutes(routes);
+    this.initializeSwagger();
+    this.initializeErrorHandling();
   }
 
   public listen() {
@@ -50,7 +50,7 @@ class App {
     set('strictQuery', false);
     await connect(dbConnection.url);
 
-    console.log('connected');
+    logger.info(`Database connected`);
   }
 
   private initializeMiddlewares() {
