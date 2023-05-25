@@ -30,7 +30,7 @@ npm run dev
 
 Once running, the api documentation can be found [here](http://localhost:3501/api-documentation)
 
-To the test suites, ensure you have the server running, then in another terminal run: 
+To the test suites, use the following command: 
 
 ```shell
 npm run test
