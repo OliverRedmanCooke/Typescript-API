@@ -1,0 +1,25 @@
+# baseURL
+@baseURL = http://localhost:3501
+
+###
+# Find All Tasks
+GET {{ baseURL }}/tasks
+
+###
+# Find Task By Id
+GET {{ baseURL }}/tasks/646f1a93d0523c0aba35fa06
+
+###
+# Create Task
+POST {{ baseURL }}/tasks
+Content-Type: application/json
+
+{
+    "title": "This is really important",
+    "description": "This is a description",
+    "priority": "HIGH"
+}
+
+###
+# Delete Task By Id
+DELETE {{ baseURL }}/tasks/646f1a93d0523c0aba35fa06
